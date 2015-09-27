@@ -7,6 +7,7 @@ app = Flask(__name__)
 # manager = Manager(app)
 bootstrap = Bootstrap(app)
 
+DEBUG = True
 
 @app.route('/')
 def index():
@@ -19,4 +20,4 @@ def user(name):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(application.run(host='0.0.0.0', port=3000))
