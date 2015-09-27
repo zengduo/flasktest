@@ -1,10 +1,10 @@
 from flask import Flask, render_template
-from flask.ext.script import Manager
+# from flask.ext.script import Manager
 from flask.ext.bootstrap import Bootstrap
 
 app = Flask(__name__)
 
-manager = Manager(app)
+# manager = Manager(app)
 bootstrap = Bootstrap(app)
 
 
@@ -19,4 +19,4 @@ def user(name):
 
 
 if __name__ == '__main__':
-    manager.run()
+    app.run()
